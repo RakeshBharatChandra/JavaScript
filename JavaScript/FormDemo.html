@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> FormsValidation </title>
+            <script type="text/javascript">
+
+            function validate(){
+                
+                var user = document.getElementById("user");
+                var pass =document.getElementById("pass");
+                //if(user.value.trim()=="" || pass.value.trim()==""){
+                //    alert("Fill the Inputs !");
+                //    return false;
+                //}
+                if(user.value.trim()==""){
+                    alert("Blank UserName...!!")
+                    user.style.border="solid 2px red"
+                    document.getElementById("lbluser").style.visibility="visible"
+                    return false;
+                }
+                else if(pass.value.trim()==""){
+                    alert("Blank Password...!!")
+                    pass.style.border="solid 2px red"
+                    document.getElementById("lblpass").style.visibility="visible"
+                    return false;
+                }
+                else if(pass.value.trim().length<5){
+                    alert("Min 5 Characters...!!")
+                    pass.style.border="solid 2px red"
+                    document.getElementById("minfive").style.visibility="visible"
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+                
+            </script>
+    </head>
+    <body>
+         <form onsubmit="return validate()" action="Message.html"  >
+             UserName: <input id="user" type="text" >
+             <label id="lbluser" style="color: red; visibility: hidden;">Fill User</label>
+             <br><br>
+             Password :<input id="pass" type="password">
+             <label id="lblpass" style="color: red; visibility: hidden;">Fill Password</label>
+             <label id="minfive" style="color: red; visibility: hidden;">Min 5 Characters</label>
+             <br><br>
+             <button type="submit">submit</button>
+         </form>
+    </body>
+</html>
+
+<!-- <input id="pass" type="password" required> -->
+

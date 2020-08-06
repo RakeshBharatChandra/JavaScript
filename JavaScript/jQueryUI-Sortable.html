@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> jQueryUI Sortable </title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.min.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.theme.css">
+            
+    </head>
+    <body>
+            <h2>jQueryUI Sorting Session</h2>
+        <div style="border: solid 1px black;" id="parnt">
+            <div id="drg1" class="cube">
+                <h4>Cube1</h4>
+            </div>
+            <br><br>
+            <div id="drg2" class="cube">
+                <h4>Cube2</h4>
+            </div>
+            <br><br>
+            <div id="drg2" class="cube">
+                <h4>Cube3</h4>
+            </div>
+            <br><br>
+
+            <img src="images/RakiPic.jpeg" width=150 alt="">
+        </div>
+
+        
+    </body>
+    <script src="Js/jquery.js" type="text/javascript"></script>
+    <script src="jqueryUI/jquery-ui.js" type="text/javascript"></script>
+    <script>
+        //$("#parnt").sortable();
+        $("#parnt").sortable({
+            opacity : 0.4,
+            cursor : "grabbing",
+            distance :50 ,
+            //containment : "parent",
+
+        });
+    </script>
+
+</html> 

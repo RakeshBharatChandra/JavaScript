@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <title> JQuery Selectors </title>
+        <link rel="stylesheet" href="CSS/style.css">
+            
+    </head>
+    <body>
+
+        <!--
+            <h2 id="head1">Hii This Is Raki</h2>
+             <h3>Hii This Is Lalli</h3>
+            <h4 class="sony">Hii This Is Sony</h4>
+            <br><br>
+            <button onclick="fnFade()" id="btn1">Fade Click</button>
+        -->
+
+        <!-- 
+            <button  id="btn1">Hide Click</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button  id="btn2">Show Click</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button  id="btn3">Toggle Click</button>
+         -->
+        
+         <!--
+
+            <button  id="btn1"> Click Me</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button  id="btn2">Click Me</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button  id="btn3">Animate</button>
+
+
+            <h2>Selectors Demo</h2>
+            <p>This is  Para out of div</p>
+            <div id="first" class="divcls">
+                <p>This is 1st Para in 1st div</p> 
+                <p>This is 2nd Para in 1st div</p>
+            </div>
+            <div id="second" class="divcls">
+                <p>This is 3rd Para in 2nd div</p> 
+            </div>
+            <div id="third" class="divcls">
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                </ul>
+            </div>
+            <ul class="lst">
+                <li>List Out Div 1</li>
+                <li>List Out Div 2</li>
+                <li>List Out Div 3</li>
+                <li>List Out Div 4</li>
+            </ul>
+
+            <div id='cube' class="mycube">
+
+                <h2>CUBE</h2>
+
+            </div>
+
+         -->
+
+         <!--
+
+            <h2>Hello Chain</h2>
+            <div id='callb' class="calling">
+                <p>This is P1</p>
+                <p>This is p2</p>
+            </div>
+            <br><br>
+            <div id='callc' class="calling">
+                 <p>This is P1</p>
+                 <p>This is p2</p>
+            </div>
+            <br>
+             <button id='togg'> Toggle</button>
+
+             <H2>DOM - Manipulation</H2>
+                              ////  <button id='act'>Action</button> 
+            <button id='set'>Set Value</button>
+            <button id='get'>Get Value</button>
+            <br><br>
+            <div id='actions' class='manp'>
+                <p id="para" class="graph"> This is the required paragraph</p>
+            </div>
+         -->
+
+         <!--
+
+            <button id='app'>Append</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='aftr'>After</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='pre'>Prepend</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='bf'>Before</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='rm'>Remove</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='emp'>Empty</button>
+            <br><br>
+            <div id='actions' class='manp'>
+                <p id="para" > This is the <b>required</b> paragraph</p>
+                <p id="graph" > This is the <b>required</b> paragraph</p>
+            </div>
+
+         -->
+
+            <button id='add'>Add Class</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='rmv'>Remove Class</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='tgg'>Toggle Class</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id='cs'>CSS</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div id='manp' class='dm'>
+                <p id="para" > This is the <b>required</b> paragraph</p>
+            </div>
+            <div id='tion' class='ex'>
+                <p id="graph" > This is the <b>required</b> paragraph</p>
+            </div>
+         
+    </body>
+
+    <script src="Js/jquery.js"></script> 
+    <script>
+        //$("button").click(fnFade);
+
+        /*
+            function fnFade(){
+                $("#head1").fadeToggle(2000);
+                //$("h3")
+                $(".sony").toggle();
+            }
+            $(document).ready(function(){
+
+                $("#btn1").click(fnSlt);
+                $("#btn2").click(fnapd);
+                
+                
+                $("#btn1").mouseenter(fdOut);
+                $("#btn1").mouseleave(fdIn);
+
+                $("#btn2").hover(fdOut,fdIn);
+
+                
+
+                function fnSlt(){
+                    //$("p,#second,.divcls").toggle();
+                    //$("div > p").toggle();
+                    //$("p:first").toggle();
+                    $("li:even").toggle();   
+                }
+                function fdIn(){
+                    //$("p,#second,.divcls").toggle();
+                    //$("div > p").toggle();
+                    //$("p:first").toggle();
+                    $("#second").fadeIn();   
+                }
+                function fdOut(){
+                    //$("p,#second,.divcls").toggle();
+                    //$("div > p").toggle();
+                    //$("p:first").toggle();
+                    $("#second").fadeOut();   
+                }
+                function fnapd(){
+                    $("div li").append("  poraaaaaaaa");
+                }
+            });
+
+        */
+
+        /*
+            $(document).ready(function(){
+
+                $("#btn1").click(function(){
+                    $("#first").slideUp();
+                });
+                $("#btn2").click(function(){
+                    $("#first").show();
+                });
+                $("#btn3").click(function(){
+                    $("#first").toggle();
+                });
+
+            });
+       */
+
+       /*
+
+            $(document).ready(function(){
+
+                $("#btn3").click(function(){
+                    $(".mycube").animate({
+                        left : '200px',
+                        height : '230px',
+                        width : '230px',
+                        opacity : 1
+                    }, 1000)
+
+                });
+
+            });
+        */
+
+        /*
+            $(document).ready(function(){
+
+                $("#togg").click(function(){
+                    $("#callb").fadeToggle(5000,function(){
+                        alert("Toggled");
+                    })
+                    $("#callc").slideUp(3000).slideDown(3000).
+                            fadeOut(2000).fadeIn(2000)
+                    
+                });
+                
+            });
+        */
+
+        /*
+            $(document).ready(function(){
+
+                $("#act").click(function(){
+                    
+                   // alert($(".manp").html());
+                    
+                    //var txt=$(".manp").text();
+                    //alert(txt)
+
+                    //$(".manp").text("Ok Babyyyy ....!!");
+
+                    //alert($(".manp").attr("class"));
+
+                    alert($(".manp").css("color"));
+
+                    $("#set").click(function(){
+
+                        //$("#para").attr("class","HeyAlexa")
+                        $("#para").css("color","green");
+                    })
+                    $("#get").click(function(){
+
+                        //alert($("#para").attr("class"))
+                        alert($("#para").css("color"));
+                    })
+                    
+                })
+
+
+            });
+
+        */    
+       
+        /*
+            $(document).ready(function(){
+
+                $("#app").click(function(){
+                    $("#actions").append("<p>This is the <i>Appended</i> paragraph</p>");
+                })
+
+                $("#aftr").click(function(){
+                    $("#actions").after("<p>This is the <i>After</i> paragraph</p>");
+                })
+
+                $("#pre").click(function(){
+                    $("#actions").prepend("<p>This is the <i>Prepended</i> paragraph</p>");
+                })
+
+                $("#bf").click(function(){
+                    $("#actions").before("<p>This is the <i>Before</i> paragraph</p>");
+                })
+
+                $("#rm").click(function(){
+                    $("#actions").remove();
+                    //$("p").remove("#graph")
+                })
+
+                $("#emp").click(function(){
+                    $("#actions").empty(); 
+                })
+
+            })
+        */
+
+        $(document).ready(function(){
+            $("#add").click(function(){
+                $("#tion").addClass("Monstor");
+            })
+            $("#rmv").click(function(){
+                $("#tion").removeClass("Monstor");
+            })
+            $("#tgg").click(function(){
+                $("#tion").toggleClass("Monstor");
+            })
+            $("#cs").click(function(){
+
+                alert($("#tion").css("color"));
+                $("#tion").css("font-size","30px");
+            })
+        })
+
+                
+    </script>
+</html>

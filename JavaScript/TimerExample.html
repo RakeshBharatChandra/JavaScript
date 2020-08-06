@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Timer </title>
+            <script type="text/javascript">
+                var ID=0
+                var seconds=0;
+                function PrintMsg(){
+                    //document.getElementById("op").innerHTML="5 seconds Are Done";
+                    document.getElementById("op").innerHTML=seconds+ " Seconds";
+                    seconds++;
+                }
+                function start(){
+                    //ID=window.setTimeout(PrintMsg,5000);
+                    ID=window.setInterval(PrintMsg,1000);
+                }
+                function stop(){
+                    //window.clearTimeout(ID);
+                    window.clearInterval(ID);
+                }
+            </script>
+    </head>
+    <body>
+        <button id="btnStart" onclick="start()">Start</button>
+        <br><br>
+        <h2 id="op">Random Text</h2>
+        <br>
+        <button id="btnStop" onclick="stop()">Stop</button>
+         
+    </body>
+</html>

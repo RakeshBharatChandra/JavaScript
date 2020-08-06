@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Intro To DOM</title>
+        <script type="text/javascript">
+            function showAlert(){
+                //alert("Burron Clicked");
+                var str= document.getElementById("heading2").innerHTML="RakiChanged"
+                alert(str);
+            }
+            function func1(){
+                var textboxinp=document.getElementById("text1").value;
+                alert(textboxinp)
+            }
+            function verifyMatch(){
+                var usernm=document.getElementById("user").value
+                var pass=document.getElementById("pass").value
+                if(usernm==pass){
+                    alert("User and pass are Matched  :"+pass)
+                }
+                else{
+                    alert("No match..! User :"+usernm+"  Password :"+pass)
+                }
+            }
+            function rdButtonSelect(){
+                var rd1=document.getElementById("rd1");
+                var rd2=document.getElementById("rd2");
+                if(rd1.checked==true){
+                    alert("The Checked Value is :"+rd1.value);
+                }
+                else if(rd2.checked==true){
+                    alert("The checked Value is :"+rd2.value);
+                }
+                else{
+                    alert("No Value Checked")
+                }
+            }
+            function selectedValue(){
+                var select = document.getElementById("selectValues");
+                alert(select.options[select.selectedIndex].value);
+            }
+
+            function styleThem(){
+                var para = document.getElementsByTagName("p");
+                //para[0].style.color="red";
+                para[1].style.fontWeight="bold";
+                para[2].style.fontSize="32";
+                para[3].style.fontStyle="italic";
+                for(var i=0;i<para.length;i++){
+                    para[i].style.color="red";
+                }
+            }
+
+            function classTagOp(){
+                var cls = document.getElementsByClassName("para");
+                for(var c=0;c<cls.length;c++){
+                    cls[c].style.color='green';
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+       <!-- <button onclick="showAlert()">ClickMe</button> --> 
+        <!-- <h2 id="heading2">Random Text</h2> -->
+        <!-- <input type="text1" placeholder="EnterSomething" id="text1"> -->
+        <!-- <button id="btn1" onclick="func1()">ClickHere</button> -->
+        <!-- 
+            UserName : <input type="text" id="user" placeholder="UserName">
+             <br><br>
+            Password : <input type="password" id="pass" placeholder="Password">
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn" onclick="verifyMatch()">Verify</button> 
+        -->
+        
+        <!-- 
+            <input type="radio" name="us" id="rd1" value="Raki" >Raki</input>
+            <br><br>
+             <input type="radio" name="us" id="rd2" value="Lalli" >Lalli</input>
+            <br><br>
+            &nbsp;&nbsp;
+            <button id="btn1" onclick="rdButtonSelect()"> ClickMe</button>
+         -->
+
+         <!-- 
+            <select id="selectValues">
+            <option value="Raki">Raki</option>
+            <option value="Lalli">Lalli</option>
+            <option value="Sony">Sony</option>
+            </select>
+            <br><br>
+            <button onclick="selectedValue()" id="btn1">ClickMe</button>
+          -->
+
+          <!-- 
+            <p>Hello This is Paragraph 1</p>
+            <p>Hello This is Paragraph 2</p>
+            <p>Hello This is Paragraph 3</p>
+            <p>Hello This is Paragraph 4</p>
+            <p>Hello This is Paragraph 5</p>
+            <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn1" onclick="styleThem()">Tadaaaa !</button>
+           -->
+         
+            <p class="para">Hello This is Paragraph 1</p>
+            <p>Hello This is Paragraph 2</p>
+            <p class="para">Hello This is Paragraph 3</p>
+            <p>Hello This is Paragraph 4</p>
+            <p class="para">Hello This is Paragraph 5</p>
+            <p>Hello This is Paragraph 6</p>
+            <a href="googlesere
+            " class="para">Hello this is anchor Tag</a>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;
+            <button id="btn1" onclick="classTagOp()">Tadaaaa !</button>
+           
+    </body>
+</html>
+
+
+
+<!--  -->

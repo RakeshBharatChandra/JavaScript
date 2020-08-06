@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> MouseDemo </title>
+            <script type="text/javascript">
+
+            function mouseOnImage(){
+                document.getElementById("imge") .src ="images/CRPic.jpg";
+            }
+            function mouseOutImage(){
+                document.getElementById("imge") .src ="images/RakiPic.jpeg";
+            }
+                
+            </script>
+    </head>
+    <body>
+   
+         <img id="imge" onmouseover="mouseOnImage()" 
+           onmouseout="mouseOutImage()" src="images/RakiPic.jpeg" width="250"/>
+         
+    </body>
+</html>

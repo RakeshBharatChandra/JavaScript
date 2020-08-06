@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Fade-In and Fade-Out </title>
+            <script type="text/javascript">
+                var opacity=0;
+                var intervalID=0; 
+                function fadeOut(){
+                   intervalID=window.setInterval(hide,500);
+                }
+                function hide(){
+                    var image=document.getElementById("raki");
+                    opacity =Number( window.getComputedStyle(image).getPropertyValue
+                    ("opacity") ); 
+
+                    if(opacity>0){
+                        opacity=opacity-0.1;
+                        image.style.opacity=opacity;
+                        console.log(opacity);
+                    }
+                    else{
+                        clearInterval(intervalID);
+                    }
+                }
+                function fadeIn(){
+                   intervalID=window.setInterval(show,500);
+                }
+                function show(){
+                    var image=document.getElementById("raki");
+                    opacity =Number( window.getComputedStyle(image).getPropertyValue
+                    ("opacity") ); 
+
+                    if(opacity<1){
+                        opacity=opacity+0.1;
+                        image.style.opacity=opacity;
+                        console.log(opacity);
+                    }
+                    else{
+                        clearInterval(intervalID);
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        <button id="btnStart" onclick="fadeOut()">fadeOut</button>
+        <br><br>
+        <img src="images/RakiPic.jpeg" width=450 id="raki">
+        <br><br>
+        <button id="btnStop" onclick="fadeIn()">fadeIn</button>
+    </body>
+</html>

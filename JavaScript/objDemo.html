@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Objects</title>
+            <script type="text/javascript">
+              /*  var car ={
+                     car_brand:"Buggati",
+                      car_model:"A4509",
+                     car_Price:4500,
+
+                     driverLess: function(){
+                       return "This can be driven without driver"
+                       //return document.write("<h2>This can be driven without driver</h2>")
+                     }       
+                     
+                }
+                //var car_brand="Buggati"
+                //var car_model="A4509"
+                //var car_Price=4500
+                //function driverLess(){
+                //    document.write("<h2>This can be driven without driver</h2>")
+                //}
+                //driverLess();
+                document.write("<h2>"+car.driverLess()+"</h2>")
+                //car.driverLess();
+
+             */
+
+             function Cars(cars_brand,cars_model,cars_Price){
+                 this.cars_Price=cars_Price;
+                 this.cars_brand=cars_brand;
+                 this.cars_model=cars_model;
+                 this.driverLess = function(){
+                    //return "<h2>This can be driven without driver</h2>"
+                    return document.write("<h2>This can be driven without driver</h2>")
+                 }
+             }
+
+             var audi=new Cars("Audi","A4",1200)
+             var BMW=new Cars("BMW","X5",2100)
+             document.write("<h2>"+audi.cars_brand+"</h2>");
+             document.write("<h2>"+BMW.cars_Price+"</h2>");
+             //document.write("<h2>"+audi.driverLess()+"</h2>")
+             BMW.driverLess()
+
+             //var str1= new String();
+
+
+             //document.write("<h2>"+typeof(str1)+"</h2>");
+
+             //100 lines of code
+
+             Cars.fueltype="Electric";
+             document.write("<h2>"+Cars.fueltype+"</h2>");
+
+             //delete cars_Price;
+             document.write("<h2>"+Cars.cars_Price+"</h2>");
+
+
+
+                
+            </script>
+    </head>
+    <body>
+         
+    </body>
+</html>

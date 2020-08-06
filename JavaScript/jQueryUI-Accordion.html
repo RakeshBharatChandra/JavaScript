@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> jQueryUI Accordion </title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.min.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.theme.css">
+            
+    </head>
+    <body>
+        <div id="acc">
+            <h2>Raki</h2>
+                <p>Raki is the only boy in the house</p>
+            <h2>Lalli</h2>
+                <p>Lalli is the badgirls uses to complaint on 
+                        raki everytime</p>
+            <h2>Sony</h2>
+                <p>Sony is our cousin. But we used to be soo close as siblings</p>
+        </div>
+    </body>
+    <script src="Js/jquery.js" type="text/javascript"></script>
+    <script src="jqueryUI/jquery-ui.js" type="text/javascript"></script>
+    <script>
+        //$("div").accordion();
+        $("div").accordion({
+            active:0,
+            collapsible:true,
+            heightStyle:true,
+            animate:1000,
+            event:"mouseover",
+            icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+        });
+
+    </script>
+
+</html> 

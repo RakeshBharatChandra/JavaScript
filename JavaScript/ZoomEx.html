@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Zoom in and Out</title>
+            <script type="text/javascript">
+                var width=100;
+                var difference=2;
+                var intervalID=0;
+                //document.getElementById("dil").style.width=width;
+                function increase(){
+                    clearInterval(intervalID);
+                    intervalID=setInterval(ZoomIn,10);
+                }
+                function ZoomIn(){
+                    if(width<500){
+                        width=width+difference;
+                        document.getElementById("dil").style.width=width;
+                        console.log(width);
+                    }
+                    else{
+                        clearInterval(intervalID);
+                    }
+                }
+                function decrease(){
+                    clearInterval(intervalID);
+                    intervalID=setInterval(ZoomOut,10);
+                }
+                function ZoomOut(){
+                    if(width>100){
+                        width=width-difference;
+                        document.getElementById("dil").style.width=width;
+                        console.log(width);
+                    }
+                    else{
+                        clearInterval(intervalID);
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        
+         <img src="images/BoostFelloww.jpeg" width=100 id="dil"
+                onmouseover="increase()" onmouseout="decrease()">
+    </body>
+</html>

@@ -1,0 +1,66 @@
+h3{
+    color:purple;
+}
+#head1{
+    color:greenyellow;
+}
+.sony{
+    color: hotpink;
+}
+
+.divcls{
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+#cube{
+    height: 100;
+    width: 100;
+    font-weight: 100;
+    font-style: italic;
+    background-color: darkmagenta;
+    text-align: center;
+    opacity: 0.5;
+    position: absolute;
+    border: solid 5px rosybrown;
+    padding: 10px;
+}
+
+#callb{
+    background-color:violet;
+    border: solid 2px blue;
+    opacity: 0.6;
+}
+#callc{
+    //background-color:violet;
+    border: solid 2px blue;
+    opacity: 0.6;
+}
+
+.manp{
+    color:tomato;
+    border: solid 2px fuchsia;
+    opacity: 0.6;
+}
+
+#tion{
+    color:tomato;
+    border: solid 2px fuchsia;
+    opacity: 0.6;
+}
+.Monstor{
+    border-radius: 20px;
+    background-color: rgb(15, 179, 179);
+}
+
+.cube{
+    border: solid 2px rgb(199, 17, 56);
+    color: rgb(0, 0, 8);
+    background-color: darkturquoise;
+    padding: 5px;
+    font-size: larger;
+    height: 90;
+    width: 90;
+}
